@@ -16,8 +16,16 @@
     "widget",
     "materials"
   ],
-  "author": "Sergei Pashkov",
+  "author": {
+    "name": "Sergei Pashkov",
+    "email": "summersby@gmail.com",
+    "url": "https://summersby.ru"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Summersby89/Apps"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
