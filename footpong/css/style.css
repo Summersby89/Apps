@@ -1,0 +1,69 @@
+.football {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.field {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.ball {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.football__scoreboard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+
+}
+
+.football__scoreboard p {
+	margin: 0;
+}
+
+.goal-wrapper {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/* transition: 2s ; */
+	z-index: 5000;
+}
+
+.goal {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.active {
+
+	opacity: 1;
+	visibility: visible;
+
+}
