@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1000px;
+  font-family: Arial;
+  background-color: #f9f9f9;
+}
+.header-heading {
+  font-size: 21px;
+  padding: 27px 0 0 0;
+  margin: 50px 0 35px;
+}
+.main-form {
+  flex: 0 0 40%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+.cases-list {
+  flex: 0 0 40%;
+}
+.case-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  top: -3px;
+  margin-right: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.toast {
+  opacity: 1;
+}
+.case-down {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  top: -1px;
+  margin-right: 20px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.cases-none {
+  margin-left: 100px;
+  flex: 0 1 40%;
+  color: #8993ad;
+  font-size: 16px;
+}
+.error {
+  border: 1px solid #ff0000 !important;
+}
