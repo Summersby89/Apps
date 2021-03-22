@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="formToDo">
+        <h1 class="heading">Мой список дел:</h1>
+        <input type="text" class="inputName form-control" placeholder="Напишите..." tabindex="1"/>
+        <ol class="toDoList">
+          <li class="toDo" tabindex="2">Сходить в магазин</li>    
+          <li class="toDo" tabindex="2">Приготовить ужин</li>
+        </ol>
+        <button type="submit" id="addBtn" class="btn btn-primary" tabindex="3">Добавить</button>
+      </div>
+
+      <div class="alert hiden">
+        Такая запись уже есть. Всё равно добавить?
+        <button id="Yes" class="btn btn-success" >Да</button>
+        <button id="No" class="btn btn-danger">Нет</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

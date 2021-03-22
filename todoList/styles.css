@@ -1,0 +1,85 @@
+html,
+body {
+    padding: 0;
+    min-width: 1000px;
+    font-family: Arial;
+    background-color: #f9f9f9 !important;
+}
+
+.container {
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.formToDo {
+    margin: 100px;
+    flex: 0 0 50%;
+    padding: 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+}
+
+.heading {
+    padding: 25px 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hiden {
+    display: none;
+}
+
+.through {
+    background: #888;
+    text-decoration: line-through;
+}
+
+.toDo {
+    padding: 5px 0;
+    cursor: pointer;
+    background: #eee;
+    transition: 0.2s;
+}
+
+.toDoList {
+    padding-left: 15px;
+}
+
+.inputName {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Установить все нечетные элементы списка в другой цвет (зебра) */
+.toDo:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Более темный фон-цвет при наведении */
+.toDo:hover {
+    background: #ddd;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.alert {
+    margin-top: 250px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+}
