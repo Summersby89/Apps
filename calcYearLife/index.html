@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя жизнь в неделях</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-wrap">
+    <div class="app-container">
+      <div class="app-table">
+        <h1 class="app-table__title hidden">90 лет жизни в неделях</h1>
+        <div class="app-table__x">Недели<span class="app-table__x-decor">52</span></div>
+        <div class="app-table__y">Годы</div>
+        <div class="app-table__body">
+          <div class="app-table__body-x">
+            <span class="app-table__body-x-coord"><span class="app-table__body-x-coord-zero">0</span></span>
+            <span class="app-table__body-x-coord">10</span>
+            <span class="app-table__body-x-coord">20</span>
+            <span class="app-table__body-x-coord">30</span>
+            <span class="app-table__body-x-coord">40</span>
+            <span class="app-table__body-x-coord">50</span>
+          </div>
+          <div class="app-table__body-y">
+            <span class="app-table__body-y-coord">10</span>
+            <span class="app-table__body-y-coord">20</span>
+            <span class="app-table__body-y-coord">30</span>
+            <span class="app-table__body-y-coord">40</span>
+            <span class="app-table__body-y-coord">50</span>
+            <span class="app-table__body-y-coord">60</span>
+            <span class="app-table__body-y-coord">70</span>
+            <span class="app-table__body-y-coord">80</span>
+            <span class="app-table__body-y-coord">90</span>
+          </div>
+          <div class="app-table__body-content">
+            <div class="app-table__body-comment">
+              <div class="app-table__body-comment-wrap">
+                <div class="app-table__body-comment-content">
+                  <span class="app-table__body-comment-age" data-middle="77.6"> года</span>
+                  <p class="app-table__body-statistic">
+                    Это средняя продолжительность жизни <span class="app-table__body-comment-sex" data-sex="женщин"></span> в России.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <span class="app-table__body-dot _empty" data-dott></span>
+            <span class="app-table__body-dot _young" data-dott></span>
+            <span class="app-table__body-dot _adult" data-dott></span>
+            <span class="app-table__body-dot _senior" data-dott></span>
+          </div>
+          <div class="app-table__body-legend">
+            <div class="app-table__body-legend-item"><span class="app-table__body-legend-dot _young"></span>
+              <span class="app-table__body-legend-description">До 18 лет, детство</span>
+            </div>
+            <div class="app-table__body-legend-item"><span class="app-table__body-legend-dot _adult"></span>
+              <span class="app-table__body-legend-description">От 18 до 60 (65), взрослая жизнь</span>
+            </div>
+            <div class="app-table__body-legend-item"><span class="app-table__body-legend-dot _senior"></span>
+              <span class="app-table__body-legend-description">После 60 (65), старость</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-controls">
+        <section class="app-controls__section app-data">
+          <h2 class="app-controls__title">Добавить данные</h2>
+          <form class="app-data-form" data-form>
+            <div class="app-data-form__container">
+              <div class="app-data-form__field-container">
+                <label class="app-data-form__label" for="birthday">
+                  <span class="app-data-form__text">Дата рождения</span>
+                </label>
+                <input class="app-data-form__input" id="birthday" type="date" value="2000-01-01" required data-birthday autofocus>
+              </div>
+              <div class="app-data-form__field-container app-data-form__field-container_f-m">
+                <span class="app-data-form__text">Ваш пол</span>
+                <div class="app-data-form__field-switcher">
+                  <label class="app-data-form__label hidden" for="female">Женский</label>
+                  <label class="app-data-form__label hidden" for="male">Мужской</label>
+                  <input class="app-data-form__s-input app-data-form__s-input_female" type="radio" id="female" name="sex" checked data-gender>
+                  <span class="app-data-form__switch app-form__switch_female">Ж</span>
+                  <input class="app-data-form__s-input app-data-form__s-input_male" type="radio" id="male" name="sex">
+                  <span class="app-data-form__switch app-form__switch_male">М</span>
+                </div>
+              </div>
+            </div>
+            <button class="app-controls__button">Заполнить таблицу</button>
+          </form>
+        </section>
+        <section class="app-controls__section app-share">
+          <h2 class="app-controls__title">Поделиться</h2>
+          <form class="app-share-form">
+            <textarea class="app-share__textarea" data-share-title>Хэй, смотри, моя первая программа работает и это не «Hello World!»</textarea>
+            <div class="app-share__buttons">
+              <button class="app-share__button app-share__button_facebook" data-sharer="facebook" data-hashtag="Нетология, мояПерваяПрограмма" data-url=""><span class="hidden">В фэйсбук</span></button>
+              <button class="app-share__button app-share__button_twitter" data-sharer="twitter" data-title="" data-hashtags="Нетология, мояПерваяПрограмма" data-url=""><span class="hidden">В твиттере</span></button>
+              <button class="app-share__button app-share__button_vk" data-sharer="vk" data-title="" data-url=""><span class="hidden">Вконтакте</span></button>
+            </div>
+          </form>
+        </section>
+        <section class="app-controls__section app-save">
+          <h2 class="app-controls__title">Сохранить</h2>
+          <form class="app-save-form">
+            <a class="app-controls__button" role="button" href="img/for-print.pdf" download="Моя жизнь в неделях">Скачать бланк</a>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="js/hw-1.js"></script>
+  <script src="js/hw-2.js"></script>
+  <script src="js/hw-3.js"></script>
+  <script src="js/hw-4.js"></script>
+  <script src="js/fill.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/socials.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+</body>
+
+</html>
